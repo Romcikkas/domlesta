@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Domlesta, MB - Statybinių medžiagų prekyba",
+  title: "Domlesta, MB - Reliable Freight Partner",
   description:
-    "Domlesta, MB – statybinių medžiagų mažmeninė prekyba Vilniuje. Hetitų g. 25, tel. +370 637 79185",
+    "Domlesta, MB – Road and air freight services from EU to CIS countries (Kazakhstan, Uzbekistan, Kyrgyzstan, Turkey) and worldwide. Cargo insurance, customs brokerage, packing services.",
 };
 
 export default function RootLayout({
