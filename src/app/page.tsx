@@ -12,38 +12,31 @@ export default function Home() {
       <div className="hero min-h-screen">
         <div className="hero-content text-center">
           <div className="max-w-4xl">
+            {/* Hidden H1 for SEO */}
+            <h1 className="sr-only">Domlesta - Reliable Freight Partner</h1>
+
             {/* Logo */}
             <motion.div
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="mb-8"
+              className="mb-2 mt-8"
             >
               <Image
                 src="/images/logo.png"
                 alt="Domlesta Logo"
-                width={300}
+                width={260}
                 height={100}
                 className="mx-auto"
                 priority
               />
             </motion.div>
 
-            {/* Title */}
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-5xl md:text-7xl font-bold mb-1 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
-            >
-              Domlesta
-            </motion.h1>
-
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-xl md:text-[29px] mb-12 text-base-content/80"
+              className="text-xl md:text-[22px] mb-20 text-base-content/80"
             >
               Reliable freight partner
             </motion.p>
