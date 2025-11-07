@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
+import { FiPhone, FiMail, FiMapPin, FiTruck, FiShield } from "react-icons/fi";
+import { FaPlane } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -33,7 +34,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
+              className="text-5xl md:text-7xl font-bold mb-1 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
             >
               Domlesta
             </motion.h1>
@@ -42,18 +43,81 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-xl md:text-2xl mb-12 text-base-content/80"
+              className="text-xl md:text-[29px] mb-12 text-base-content/80"
             >
-              Statybinių medžiagų mažmeninė prekyba
+              Reliable freight partner
             </motion.p>
+
+            {/* Services Section */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="mb-16"
+            >
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-base-content">
+                Our Services
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                {/* Road Transport */}
+                <div className="card bg-gradient-to-br from-primary/5 to-primary/10 border border-primary/20 shadow-lg">
+                  <div className="card-body">
+                    <div className="w-14 h-14 rounded-full bg-primary/20 flex items-center justify-center mb-4 mx-auto">
+                      <FiTruck className="text-3xl text-primary" />
+                    </div>
+                    <h3 className="card-title text-xl justify-center mb-2">
+                      Road transport
+                    </h3>
+                    <p className="text-base-content/70 text-center">
+                      We deliver cargo from the EU to CIS countries, including
+                      Kazakhstan, Uzbekistan, Kyrgyzstan, and Turkey.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Air Transport */}
+                <div className="card bg-gradient-to-br from-secondary/5 to-secondary/10 border border-secondary/20 shadow-lg">
+                  <div className="card-body">
+                    <div className="w-14 h-14 rounded-full bg-secondary/20 flex items-center justify-center mb-4 mx-auto">
+                      <FaPlane className="text-3xl text-secondary" />
+                    </div>
+                    <h3 className="card-title text-xl justify-center mb-2">
+                      Air transport
+                    </h3>
+                    <p className="text-base-content/70 text-center">
+                      We arrange air freight to any destination worldwide.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Other Services */}
+                <div className="card bg-gradient-to-br from-accent/5 to-accent/10 border border-accent/20 shadow-lg">
+                  <div className="card-body">
+                    <div className="w-14 h-14 rounded-full bg-accent/20 flex items-center justify-center mb-4 mx-auto">
+                      <FiShield className="text-3xl text-accent" />
+                    </div>
+                    <h3 className="card-title text-xl justify-center mb-2">
+                      Other services
+                    </h3>
+                    <p className="text-base-content/70 text-center">
+                      We provide cargo insurance, customs brokerage, and packing
+                      services.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
 
             {/* Contact Cards */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
               className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto"
             >
+              <h2 className="col-span-full text-3xl md:text-4xl font-bold mb-4 text-base-content">
+                Contact Us
+              </h2>
               {/* Phone */}
               <a
                 href="tel:+37063779185"
@@ -63,7 +127,7 @@ export default function Home() {
                   <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                     <FiPhone className="text-3xl text-primary" />
                   </div>
-                  <h3 className="card-title text-lg">Telefonas</h3>
+                  <h3 className="card-title text-lg">Phone</h3>
                   <p className="text-primary font-semibold">+370 637 79185</p>
                 </div>
               </a>
@@ -77,9 +141,9 @@ export default function Home() {
                   <div className="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center mb-4">
                     <FiMail className="text-3xl text-secondary" />
                   </div>
-                  <h3 className="card-title text-lg">El. paštas</h3>
+                  <h3 className="card-title text-lg">Email</h3>
                   <p className="text-secondary font-semibold">
-                    info@domlesta.lt
+                    info@domlesta.com
                   </p>
                 </div>
               </a>
@@ -95,7 +159,7 @@ export default function Home() {
                   <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mb-4">
                     <FiMapPin className="text-3xl text-accent" />
                   </div>
-                  <h3 className="card-title text-lg">Adresas</h3>
+                  <h3 className="card-title text-lg">Address</h3>
                   <p className="text-accent font-semibold">
                     Hetitų g. 25
                     <br />
@@ -109,7 +173,7 @@ export default function Home() {
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
+              transition={{ duration: 0.6, delay: 0.7 }}
               className="mt-16 text-base-content/60"
             >
               <p className="text-sm">
