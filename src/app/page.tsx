@@ -48,6 +48,10 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="mb-16"
             >
+              <p className="text-lg text-base-content/60 mb-8 italic">
+                We're updating our website. In the meantime, you can still learn
+                more about who we are and what we do.
+              </p>
               <h2 className="text-3xl md:text-4xl font-bold mb-8 text-base-content">
                 Our Services
               </h2>
@@ -143,7 +147,7 @@ export default function Home() {
 
               {/* Address */}
               <a
-                href="https://maps.google.com/?q=Hetitų g. 25, Vilnius"
+                href="https://maps.google.com/?q=Vilnius, Lithuania"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
@@ -154,9 +158,7 @@ export default function Home() {
                   </div>
                   <h3 className="card-title text-lg">Address</h3>
                   <p className="text-accent font-semibold">
-                    Hetitų g. 25
-                    <br />
-                    Vilnius, LT-11312
+                    Located in Vilnius, Lithuania
                   </p>
                 </div>
               </a>
