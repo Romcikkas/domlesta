@@ -172,8 +172,7 @@ export default function Home() {
               className="mt-16 text-base-content/60"
             >
               <p className="text-sm">
-                © {new Date().getFullYear()} Domlesta, MB. Visos teisės
-                saugomos.
+                © {new Date().getFullYear()} Domlesta, MB. All rights reserved.
               </p>
             </motion.div>
           </div>
